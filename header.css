@@ -1,0 +1,14 @@
+.login-container {
+    display: flex;
+    background-color:palevioletred;
+    padding: 2%;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2); 
+    width: 80%; 
+    margin: 10px auto; 
+    border-radius: 30px;
+    position: fixed; 
+    opacity: 1; 
+    top: 10%; 
+    left: 50%; 
+    transform: translateX(-50%); 
+}
