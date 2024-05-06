@@ -12,3 +12,24 @@
     left: 50%; 
     transform: translateX(-50%); 
 }
+ul,li{
+    display: flex;
+    padding-left: 15%;
+    padding-right: 15%;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+
+
+}
+ul,li:hover{
+    transform: translateX(10%);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    -ms-zoom-animation:inherit ;
+}
+img{
+    flex:1;
+}
+body{
+    background-color: lightpink;
+}
