@@ -1,6 +1,7 @@
+/* Default styles */
 .login-container {
     display: flex;
-    background-color:palevioletred;
+    background-color: darkgray; /* Set a fallback color */
     padding: 2%;
     box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2); 
     width: 80%; 
@@ -12,24 +13,53 @@
     left: 50%; 
     transform: translateX(-50%); 
 }
-ul,li{
+
+ul, li {
     display: flex;
     padding-left: 15%;
     padding-right: 15%;
     font-size: large;
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
-
-
+    transition: transform 0.3s ease;
 }
-ul,li:hover{
+
+ul, li:hover {
     transform: translateX(10%);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     -ms-zoom-animation:inherit ;
 }
-img{
+
+img {
+    padding-top: 20px;
     flex:1;
 }
-body{
-    background-color: lightpink;
+
+.navbar {
+    display: flex;
+}
+
+body {
+    background: color-mix(in srgb, blue 90%, black 10%);
+    background-image: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 100%);
+    /* Add radial gradient as a background image */
+}
+
+.web {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-style: oblique;
+    text-decoration-color: crimson;
+}
+
+/* Media Query for Responsive Design */
+@media screen and (max-width: 768px) {
+    .login-container {
+        width: 90%; /* Adjusting width for smaller screens */
+    }
+    
+    ul, li {
+        padding-left: 10%; /* Adjusting padding for smaller screens */
+        padding-right: 10%; /* Adjusting padding for smaller screens */
+    }
 }
