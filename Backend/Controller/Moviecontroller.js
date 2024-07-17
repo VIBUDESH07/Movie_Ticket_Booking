@@ -1,16 +1,13 @@
 const Movie = require('../Models/Movie');
 
-// Fetch all movies
 const getMovies = async (req, res) => {
   try {
-    const movies = await Movie.find(); // Fetch all movies from the database
+    const movies = await Movie.find();
     res.status(200).json(movies);
   } catch (error) {
     res.status(500).json({ message: 'Error fetching movies', error });
   }
 };
-
-// Add a new movie
 const addMovie = async (req, res) => {
   const { name, poster, rating } = req.body;
 
